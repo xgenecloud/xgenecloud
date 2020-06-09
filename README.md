@@ -87,7 +87,7 @@ XgeneCloud consists of **Three** simple & amazing products :
   - GUI DB Client enables - Point & Click schema design & schema migrations. 
   - GUI API Client to debug APIs.
 - **A Hybrid Serverless Framework**!
-  - All APIs generated can be depoyed as Serverless Functions on any Cloud Platform! 
+  - All APIs generated can be deployed as Serverless Functions on any Cloud Platform! 
   - This is without changing any change to source code generated.
 
 ## A Simple Overview
@@ -605,7 +605,7 @@ Coming soon...
 - Install Zeit now library and authenticate using email.
 - Add `production` environment in `config.xc.json`
  
-    ```
+    ```json
     "envs": {
         "production": {
           "db": [
