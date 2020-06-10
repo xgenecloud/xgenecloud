@@ -122,7 +122,7 @@ XgeneCloud consists of **Three** simple & amazing products :
   - [Authentication](https://docs.xgenecloud.com/en/v0.5/graphql-apis/graphql-authentication)
   - [ACL](https://docs.xgenecloud.com/en/v0.5/graphql-apis/graphql-acl)
   - [Middleware](https://docs.xgenecloud.com/en/v0.5/graphql-apis/graphql-middleware)
-  - [GraphQL Schema Generation & Stitching](http://localhost:3000/en/v0.5/graphql-apis/graphql-schema-stitching)
+  - [GraphQL Schema Generation & Stitching](https://docs.xgenecloud.com/en/v0.5/graphql-apis/graphql-schema-stitching)
 - [**Database**](https://docs.xgenecloud.com/en/v0.5/database/database-modelling)
   - [Database Modelling](https://docs.xgenecloud.com/en/v0.5/database/database-modelling)
   - [Schema Migrations](https://docs.xgenecloud.com/en/v0.5/database/database-migrations)
