@@ -31,11 +31,6 @@
 
 <br>
 
-### Amazing Responses To Our HackerNews [Launch](https://news.ycombinator.com/item?id=23466782)
-<img  loading="lazy" src="/static/hn.png"/>
-
-<br>
-
 # Usage
 
 #### Install CLI
@@ -86,6 +81,10 @@ $ xc man
     <br/><br/><br/><br/>
 </p>
 
+### Amazing Responses To Our HackerNews [Launch](https://news.ycombinator.com/item?id=23466782)
+<img  loading="lazy" src="/static/hn.png"/>
+
+<br>
 
 # What is XgeneCloud ?
 XgeneCloud consists of **Three** simple & amazing products :
