@@ -27,7 +27,11 @@
 <br>
 
 # Supported Databases
-- MySQL :fire: • PostgresSQL :fire: • MSSQL :fire: • SQLite :fire: • MariaDb :fire:
+- MySQL :fire: 
+- PostgresSQL :fire: 
+- MSSQL :fire: 
+- SQLite :fire: 
+- MariaDb :fire:
 
 <br>
 
