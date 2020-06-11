@@ -29,7 +29,7 @@
 # Supported Databases
 - MySQL :fire: 
 - PostgresSQL :fire: 
-- MSSQL :fire: 
+- MSSQL / SQL Server :fire: 
 - SQLite :fire: 
 - MariaDb :fire:
 
