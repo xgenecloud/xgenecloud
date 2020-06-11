@@ -29,6 +29,12 @@
 # Supported Databases
 - MySQL, PostgresSQL, MSSQL, SQLite, MariaDb
 
+
+## Amazing Responses To Our HackerNews [Launch](https://news.ycombinator.com/item?id=23466782)
+<img  loading="lazy" src="/static/hn.png"/>
+
+<br>
+
 # Usage
 
 #### Install CLI
@@ -99,6 +105,7 @@ XgeneCloud consists of **Three** simple & amazing products :
 <img  loading="lazy" src="/static/diagrams/cloudOverview.png"/>
 
 <br>
+
 
 # Table Of Contents
 - [**Setup**](https://docs.xgenecloud.com/en/v0.5/getting-started/install)
