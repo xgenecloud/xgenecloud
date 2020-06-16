@@ -1,8 +1,6 @@
 const path = require('path');
 const inquirer = require('inquirer')
 const chalkPipe = require('chalk-pipe');
-const {promisify} = require("util");
-const Util = require('../util/Util');
 const mkdirp = require('mkdirp');
 const URL = require('url');
 

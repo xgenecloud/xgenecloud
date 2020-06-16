@@ -57,7 +57,6 @@ class Client {
         case 'gen.apis.gql':
           if (!args.err) {
             SocialMgr.setCreatedApis(true)
-            // console.log(args);
             if (os.type() === 'Windows_NT') {
               console.log(boxen(`# APIs generated successfully\n\n# Please run the following commands\n${('cd ' + path.dirname(args.folder) + '; npm install ; npm run dev\n').green.bold}`, {
                 padding: 1,

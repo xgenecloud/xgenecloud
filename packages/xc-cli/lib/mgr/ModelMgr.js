@@ -1,4 +1,3 @@
-const inquirer = require('inquirer');
 const path = require('path');
 const glob = require('glob')
 const fsExtra = require('fs-extra')

@@ -4,8 +4,6 @@ const mkdirp = require("mkdirp");
 let rootDir = null;
 const promisify = require('util').promisify;
 
-// const {promisify} = require("util");
-
 class XcApiBridge {
 
   constructor({dir}) {

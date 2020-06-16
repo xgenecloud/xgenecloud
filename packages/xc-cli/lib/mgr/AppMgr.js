@@ -1,4 +1,3 @@
-const path = require('path');
 const download = require('download')
 const ora = require('ora');
 const os = require('os');
