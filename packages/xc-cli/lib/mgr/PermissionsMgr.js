@@ -66,8 +66,8 @@ class PermissionsMgr {
                         obj[role] = val;
                         return obj;
                       }, {});
-                        Object.assign(rolesObj, permObj)
-                        console.log(`Setting Permissions for model:${modelName} roles:${roles.join(', ')} , resolver: ${route}`);
+                      Object.assign(rolesObj, permObj)
+                      console.log(`Setting Permissions for model:${modelName} roles:${roles.join(', ')} , resolver: ${route}`);
                     }
                   })
                 }
@@ -233,8 +233,7 @@ class PermissionsMgr {
         let policiesPath = path.join(process.cwd(), 'server', PermissionsMgr.getPolicyPath(), '**', '*.policy.js');
 
 
-// instantiate
-
+        // instantiate
         let rows = [], roles = [];
 
 
@@ -262,22 +261,16 @@ class PermissionsMgr {
               }
               rows.push(row)
             }
-
           }
-
-          // console.log(`Model : ${modelName} \n${JSON.stringify(filePermissions, 0, 2)} `)
         })
 
 
         const table = new Table({
           head: ['Route', ...roles]
-
         });
 
         table.push(...rows);
-
         console.log(table.toString());
-
 
       } catch (e) {
         console.error(`Error in xc permissions.get`, e);
@@ -299,7 +292,7 @@ class PermissionsMgr {
         let policiesPath = path.join(process.cwd(), 'server', PermissionsMgr.getPolicyPath(), '**', '*.policy.js');
 
 
-// instantiate
+        // instantiate
         var table = new Table({
           head: ['Route', 'Role', 'GET', 'POST', 'PUT', 'DELETE', 'PATCH']
 
@@ -307,8 +300,6 @@ class PermissionsMgr {
 
 
         glob.sync(policiesPath).forEach((file) => {
-          let filePermissions = require(file).permissions;
-
           const modelName = path.basename(file).split('.')[0];
 
           if (models.includes(modelName)) {
@@ -388,7 +379,7 @@ class PermissionsMgr {
           }
 
           for (let roles of Object.values(filePermissions)) {
-              roles[user] = true;
+            roles[user] = true;
           }
 
 
@@ -404,7 +395,7 @@ class PermissionsMgr {
         console.error(`Error in xc permissions.user.add`, e);
       }
 
-    }else{
+    } else {
 
       try {
         if (args._.length < 2) {
@@ -458,8 +449,6 @@ class PermissionsMgr {
     }
 
 
-
-
   }
 
   static async userDelete(args) {
@@ -495,7 +484,7 @@ class PermissionsMgr {
           }
 
           for (let roles of Object.values(filePermissions)) {
-              delete roles[user];
+            delete roles[user];
           }
 
 
@@ -510,7 +499,7 @@ class PermissionsMgr {
       } catch (e) {
         console.error(`Error in xc permissions.user.delete`, e);
       }
-    }else {
+    } else {
       try {
         if (args._.length < 2) {
           console.warn('Invalid arguments for : xc permissions.userAdd')
@@ -600,8 +589,8 @@ class PermissionsMgr {
           }
 
           for (let roles of Object.values(filePermissions)) {
-              roles[newUser] = roles[oldUser];
-              delete roles[oldUser];
+            roles[newUser] = roles[oldUser];
+            delete roles[oldUser];
           }
 
 
@@ -614,7 +603,7 @@ class PermissionsMgr {
       } catch (e) {
         console.error(`Error in xc permissions.user.delete`, e);
       }
-    }else{
+    } else {
       try {
         if (args._.length < 3) {
           console.warn('Invalid arguments for : xc permissions.userAdd')
