@@ -17,7 +17,7 @@
 
 <p align="center">
     <a href="http://www.xgenecloud.com"><b>Website</b></a> •
-    <a href="https://xgenecloud.com/docs/"><b>Documentation</b></a> • 
+    <a href="https://docs.xgenecloud.com/"><b>Documentation</b></a> • 
     <a href="https://xgenecloud.com/#subscribe-to-newsletter"><b>Newsletter</b></a> • 
     <a href="https://discord.gg/5RgZmkW"><b>Discord</b></a> • 
     <a href="https://twitter.com/xgenecloud"><b>Twitter</b></a> • 
