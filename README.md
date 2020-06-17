@@ -32,6 +32,7 @@
 - MSSQL / SQL Server :fire: 
 - SQLite :fire: 
 - MariaDb :fire:
+- Aurora :fire:
 
 <br>
 
