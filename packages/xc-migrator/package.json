@@ -1,13 +1,13 @@
 {
   "name": "xc-migrator",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "SQL based schema migrations or evolutions",
   "main": "index.js",
   "bin": {
     "xcm": "./index.js"
   },
   "scripts": {
-    "test:travis" : "echo \"test travis\"",
+    "test:travis": "echo \"test travis\"",
     "dev": "node index.js -i test",
     "pubilsh": "npm publish .",
     "migration-test": "rm -rf xmigrator.json primary-db secondary-db && DB_TYPE=mysql mocha ./lib/SqlMigratorCli/tests/sql.cli.test.js --exit",
@@ -48,6 +48,7 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.24.0",
     "mysql": "^2.16.0",
+    "mysql2": "^2.1.0",
     "rmdir": "^1.2.0",
     "sqlite3": "^4.0.6"
   },

@@ -4,6 +4,7 @@ const KnexMigrator = require("./KnexMigrator");
 class SqlMigratorFactory {
   static create(args) {
     switch (args.client) {
+      case "mysql2":
       case "mysql":
       case "pg":
       case "oracledb":
