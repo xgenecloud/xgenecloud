@@ -208,6 +208,9 @@ class KnexMigrator extends SqlMigrator {
         } else {
           switch (args.type) {
             case "mysql2":
+              freshProject = require("./templates/mysql2.template.js");
+              break;
+
             case "mysql":
               freshProject = require("./templates/mysql.template.js");
               break;
