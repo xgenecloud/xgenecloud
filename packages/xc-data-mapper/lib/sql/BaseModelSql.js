@@ -55,7 +55,7 @@ class BaseModelSql extends BaseModel {
     this.belongsToRelations = belongsTo;
     this.config = {
       limitMax: 500,
-      limitMin: 5,
+      limitMin: 1,
       limitDefault: 10,
       log: true,
       explain: false,
