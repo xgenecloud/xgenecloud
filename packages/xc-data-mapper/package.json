@@ -1,6 +1,6 @@
 {
   "name": "xc-data-mapper",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Map database tables with a driver",
   "author": "oof1lab <oof1lab@gmail.com>",
   "homepage": "https://xgene.cloud",

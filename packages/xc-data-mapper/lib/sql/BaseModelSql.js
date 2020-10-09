@@ -130,8 +130,8 @@ class BaseModelSql extends BaseModel {
    * @private
    */
   _whereFk({parentTableName, parentId}) {
-    let {referencedColumnName} = this.belongsToRelations.find(({referencedTableName}) => referencedTableName === parentTableName)
-    let where = {[referencedColumnName]: parentId};
+    let {columnName} = this.belongsToRelations.find(({referencedTableName}) => referencedTableName === parentTableName)
+    let where = {[columnName]: parentId};
     return where;
   }
 
@@ -1013,10 +1013,10 @@ class BaseModelSql extends BaseModel {
   async hasManyChildren({child, parentId, ...args}) {
     try {
       const {fields, where, limit, offset, sort} = this._getListArgs(args);
-      const {referencedColumnName} = this.hasManyRelations.find(({tableName}) => tableName === child) || {};
+      const {columnName} = this.hasManyRelations.find(({tableName}) => tableName === child) || {};
 
       let query = this.dbDriver(child).select(...fields.split(','))
-        .where(referencedColumnName, parentId)
+        .where(columnName, parentId)
         .xwhere(where);
 
       this._paginateAndSort(query, {limit, offset, sort});
