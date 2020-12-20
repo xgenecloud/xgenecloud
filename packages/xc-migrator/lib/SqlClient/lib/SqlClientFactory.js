@@ -4,7 +4,7 @@ const SqliteClient = require("./sqlite/SqliteClient");
 const PgClient = require("./pg/PgClient");
 
 class SqlClientFactory {
-  
+
   static create(connectionConfig) {
     connectionConfig.meta = connectionConfig.meta || {};
     connectionConfig.meta.dbtype = connectionConfig.meta.dbtype || "";

@@ -6,7 +6,7 @@ class SqlMigrator {
   }
 
   init(project=null) {
-    
+
   }
 
   migrationsInit() {
