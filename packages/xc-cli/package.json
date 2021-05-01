@@ -28,7 +28,7 @@
     "xc-cli": "./index.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chalk-pipe": "^3.0.0",
     "clear": "^0.1.0",
     "cli-table3": "^0.6.0",
