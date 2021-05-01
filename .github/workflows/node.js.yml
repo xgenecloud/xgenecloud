@@ -16,22 +16,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
     - name: actions-setup-mysql
       uses: shogo82148/actions-setup-mysql@v1.2.2
+      with:
+        mysql-version: '5.7'
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+    - run: mysql -uroot -h127.0.0.1 -e 'SELECT version()'
     - run: curl https://raw.githubusercontent.com/xgenecloud/xc-data/master/sakila-data.sql > sakila-data.sql
     - run: curl https://raw.githubusercontent.com/xgenecloud/xc-data/master/sakila-schema.sql > sakila-schema.sql
     - run: mysql -e 'CREATE DATABASE IF NOT EXISTS sakila;'
     - run: mysql -u root --default-character-set=utf8 sakila < sakila-schema.sql
     - run: mysql -u root --default-character-set=utf8 sakila < sakila-data.sql
-    - run: npm install
-    - run: npm run lerna:install
-    - run: npm run test:travis
+
