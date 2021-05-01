@@ -35,4 +35,7 @@ jobs:
     - run: mysql -uroot -h127.0.0.1 -e 'CREATE DATABASE IF NOT EXISTS sakila;'
     - run: mysql -uroot -h127.0.0.1 --default-character-set=utf8 sakila < sakila-schema.sql
     - run: mysql -uroot -h127.0.0.1 --default-character-set=utf8 sakila < sakila-data.sql
+    - run: npm install
+    - run: npm run lerna:install
+    - run: npm run test:travis
 
