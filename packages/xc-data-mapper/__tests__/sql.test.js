@@ -256,10 +256,10 @@ describe('xc-data-mapper tests', function () {
 
   it('list + limit', async function () {
     let data = await country.list({limit: 2})
-    expect(data.length).to.not.equal(2)
+    expect(data.length).to.equal(2)
 
     data = await country.list({l: 2})
-    expect(data.length).to.not.equal(2)
+    expect(data.length).to.equal(2)
 
   });
 
