@@ -32,7 +32,7 @@ jobs:
     - run: mysql -uroot -h127.0.0.1 -e 'SELECT version()'
     - run: curl https://raw.githubusercontent.com/xgenecloud/xc-data/master/sakila-data.sql > sakila-data.sql
     - run: curl https://raw.githubusercontent.com/xgenecloud/xc-data/master/sakila-schema.sql > sakila-schema.sql
-    - run: mysql -e 'CREATE DATABASE IF NOT EXISTS sakila;'
-    - run: mysql -u root --default-character-set=utf8 sakila < sakila-schema.sql
-    - run: mysql -u root --default-character-set=utf8 sakila < sakila-data.sql
+    - run: mysql -uroot -h127.0.0.1 -e 'CREATE DATABASE IF NOT EXISTS sakila;'
+    - run: mysql -uroot -h127.0.0.1 --default-character-set=utf8 sakila < sakila-schema.sql
+    - run: mysql -uroot -h127.0.0.1 --default-character-set=utf8 sakila < sakila-data.sql
 
